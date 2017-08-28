@@ -270,6 +270,7 @@ section {
     }
   }
   &.features {
+    background-color: white;
     .section-heading {
       margin-bottom: 100px;
       h2 {
@@ -450,19 +451,30 @@ footer {
   background-color: #222222;
   padding: 25px 0;
   color: rgba(255, 255, 255, 0.3);
-  text-align: center;
+  font-size: 14px;
   p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
   }
   ul {
     margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
     li a {
-      font-size: 12px;
+      font-size: 14px;
       color: rgba(255, 255, 255, 0.3);
       &:hover, &:focus, &:active, &.active {
         text-decoration: none;
       }
+    }
+  }
+  .li-social {
+    margin-top: 20px;
+    .btn-social  {
+      font-size: 1.8em;
+      padding: 7px;
+      border-radius: 50%;
+      margin: 2px;
     }
   }
 }
