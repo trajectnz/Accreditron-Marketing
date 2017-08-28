@@ -133,14 +133,6 @@ p {
 // Homepage Header
 
 header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    overflow-y: hidden;
-    background: url("../img/bg-pattern.png"), @theme-secondary; /* fallback for old browsers */
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
     .header-content {
         text-align: center;
         padding: 150px 0 50px;
@@ -409,15 +401,15 @@ footer {
 // Button Styles
 .btn-outline {
     color: white;
-    border-color: white;
-    border: 1px solid;
+    background-color: @theme-primary;
+    border-color: @theme-primary;
     &:hover,
     &:focus,
     &:active,
     &.active {
         color: white;
-        background-color: @theme-primary;
-        border-color: @theme-primary;
+        border-color: white;
+        border: 1px solid;
     }
 }
 

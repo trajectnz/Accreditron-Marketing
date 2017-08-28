@@ -1,8 +1,8 @@
 {
-  "name": "new-age",
-  "title": "New Age",
+  "name": "kotahi",
+  "title": "Kotahi",
   "version": "3.3.7",
-  "homepage": "http://startbootstrap.com/template-overviews/new-age",
+  "homepage": "http://kotahi.co",
   "author": "Start Bootstrap",
   "license": {
     "type": "MIT",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
+    "url": "https://github.com/traject_nz/ac-landing.git"
   },
   "dependencies": {
     "simple-line-icons": "^2.3.2"
