@@ -122,12 +122,15 @@ p {
         .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
           color: #00A5FF; } }
 header {
-  display: block;
+  flex-direction: column;
   width: 100%;
   font-size: 16px;
   text-align: center;
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
   background-color: rgba(25, 29, 34, 0.75); }
   header video#bgvid {
     position: fixed;
@@ -146,13 +149,10 @@ header {
   header .header-content {
     text-align: center;
     align-items: center;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center; }
+    height: 80vh;
+    display: flex; }
     header .header-content .header-content-inner {
       color: #fff;
-      position: relative;
       max-width: 500px;
       margin: 0 auto; }
       header .header-content .header-content-inner h1 {
@@ -160,12 +160,23 @@ header {
         margin-bottom: 30px;
         font-size: 30px; }
       header .header-content .header-content-inner .join.btn {
-        margin: 15% 20px 20px 20px; }
+        margin: 16vh 0 0 0; }
       header .header-content .header-content-inner .list-badges {
         margin-bottom: 25px; }
         header .header-content .header-content-inner .list-badges img {
           height: 50px;
           margin-bottom: 25px; }
+  header .logo-bar {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    z-index: 10;
+    background: #f9f9fa;
+    display: flex;
+    align-self: flex-end; }
+    header .logo-bar .row {
+      display: flex;
+      justify-content: space-evenly; }
   header .device-container {
     max-width: 300px;
     margin: 0 auto 100px; }
@@ -176,8 +187,7 @@ header {
   header {
     min-height: 100%; }
     header .header-content .header-content-inner {
-      max-width: none;
-      margin: 0; }
+      max-width: none; }
       header .header-content .header-content-inner h1 {
         font-size: 35px; }
     header .device-container {
@@ -188,58 +198,52 @@ header {
   header .header-content .header-content-inner h1 {
     font-size: 50px; } }
 section {
-  padding: 100px 0; }
+  padding: 30px 0; }
   section h2 {
     font-size: 50px; }
-  section.logo-bar {
-    padding: 15px;
-    font-size: 16px;
-    transform: translatey(-100%);
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    background: #f9f9fa; }
-    section.logo-bar .row {
-      display: flex;
-      justify-content: space-evenly; }
-  section.download {
-    padding: 150px 0;
-    position: relative; }
-    section.download h2 {
+  section.animation {
+    background-color: white; }
+    section.animation .blue-bar {
+      border-bottom: 2px solid #00A5FF;
+      width: 60%;
+      margin: 100px auto 100px auto; }
+    section.animation h2 {
       margin-top: 0;
       font-size: 50px; }
-    section.download .badges .badge-link {
-      display: block;
-      margin-bottom: 25px; }
-      section.download .badges .badge-link:last-child {
-        margin-bottom: 0; }
-      section.download .badges .badge-link img {
-        height: 60px; }
-  section.features {
+    section.animation .video {
+      padding-top: 30px; }
+  section.learn {
+    background-color: white;
+    padding-top: 50px; }
+    section.learn .feature-comms {
+      display: flex; }
+    section.learn .feature-list {
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+  section.feature {
     background-color: white; }
-    section.features .section-heading {
+    section.feature .section-heading h2 {
+      margin-top: 0; }
+    section.feature .section-heading p {
+      margin-bottom: 0; }
+    section.feature .section-post-heading {
       margin-bottom: 100px; }
-      section.features .section-heading h2 {
+      section.feature .section-post-heading h2 {
         margin-top: 0; }
-      section.features .section-heading p {
+      section.feature .section-post-heading p {
         margin-bottom: 0; }
-    section.features .section-post-heading {
-      margin-bottom: 100px; }
-      section.features .section-post-heading h2 {
-        margin-top: 0; }
-      section.features .section-post-heading p {
-        margin-bottom: 0; }
-    section.features .device-container, section.features .feature-item {
+    section.feature .device-container, section.feature .feature-item {
       max-width: 300px;
       margin: 0 auto; }
-    section.features .device-container {
+    section.feature .device-container {
       margin-bottom: 100px; }
-    section.features .feature-item {
+    section.feature .feature-item {
       text-align: center;
       margin-bottom: 100px; }
-      section.features .feature-item h3 {
+      section.feature .feature-item h3 {
         font-size: 30px; }
-      section.features .feature-item i {
+      section.feature .feature-item i {
         font-size: 80px;
         background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
         background: linear-gradient(to left, #7b4397, #dc2430);

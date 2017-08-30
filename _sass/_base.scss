@@ -164,12 +164,15 @@ p {
 }
 
 header {
-  display: block;
+  flex-direction: column;
   width: 100%;
   font-size: 16px;
   text-align: center;
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
   background-color: rgba(25,29,34,.75);
   video#bgvid {
       position: fixed;
@@ -186,26 +189,24 @@ header {
       transform: translateX(-50%) translateY(-50%);
       // background: url("../img/team/Accreditron-Team-HighRes-0620.jpg") no-repeat;
       background-size: cover;
+
   }
   .header-content {
     text-align: center;
     align-items: center;
-    position: relative;
-    min-height: 100vh;
+    height: 80vh;
     display: flex;
-    justify-content: center;
     .header-content-inner {
       color: #fff;
-      position: relative;
       max-width: 500px;
-      margin: 0 auto ;
+      margin: 0 auto;
       h1 {
         margin-top: 0;
         margin-bottom: 30px;
         font-size: 30px;
       }
       .join.btn {
-        margin: 15% 20px 20px 20px;
+        margin: 16vh 0 0 0;
       }
       .list-badges {
         margin-bottom: 25px;
@@ -214,6 +215,20 @@ header {
           margin-bottom: 25px;
         }
       }
+
+    }
+  }
+  .logo-bar {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    z-index: 10;
+    background: #f9f9fa;
+    display: flex;
+    align-self: flex-end;
+    .row {
+      display: flex;
+      justify-content: space-evenly;
     }
   }
   .device-container {
@@ -231,7 +246,6 @@ header {
     .header-content {
       .header-content-inner {
         max-width: none;
-        margin: 0;
         h1 {
           font-size: 35px;
         }
@@ -252,45 +266,40 @@ header {
 }
 
 section {
-  padding: 100px 0;
+  padding: 30px 0;
   h2 {
     font-size: 50px;
   }
-  &.logo-bar{
-    padding: 15px;
-    font-size: 16px;
-    transform: translatey(-100%);
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    background: #f9f9fa;
-    .row {
-      display: flex;
-      justify-content: space-evenly;
+  &.animation {
+    background-color: white;
+    .blue-bar {
+      border-bottom: 2px solid $theme-primary;
+      width: 60%;
+      margin: 100px auto 100px auto;
     }
-  }
-  &.download {
-    padding: 150px 0;
-    position: relative;
     h2 {
       margin-top: 0;
       font-size: 50px;
     }
-    .badges .badge-link {
-      display: block;
-      margin-bottom: 25px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      img {
-        height: 60px;
-      }
+    .video {
+      padding-top: 30px;
     }
   }
-  &.features {
+  &.learn {
+    background-color: white;
+    padding-top: 50px;
+    .feature-comms {
+      display: flex;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+  }
+  &.feature {
     background-color: white;
     .section-heading {
-      margin-bottom: 100px;
       h2 {
         margin-top: 0;
       }
