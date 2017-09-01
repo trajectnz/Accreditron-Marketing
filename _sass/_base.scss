@@ -270,12 +270,32 @@ section {
   h2 {
     font-size: 50px;
   }
+  .section-heading {
+    padding-bottom: 10px;
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  // section-post-heading
+  .section-post-heading {
+    margin-bottom: 100px;
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
   &.animation {
     background-color: white;
+    padding-top: 100px;
     .blue-bar {
       border-bottom: 2px solid $theme-primary;
-      width: 60%;
-      margin: 100px auto 100px auto;
+      width: 30%;
+      margin: 100px auto 0 auto;
     }
     h2 {
       margin-top: 0;
@@ -287,7 +307,12 @@ section {
   }
   &.learn {
     background-color: white;
-    padding-top: 50px;
+    padding-top: 80px;
+    .blue-bar {
+      border-bottom: 2px solid $theme-primary;
+      width: 30%;
+      margin: 100px auto;
+    }
     .feature-comms {
       display: flex;
     }
@@ -295,6 +320,20 @@ section {
       display: flex;
       flex-direction: column;
       align-self: center;
+      .feature-item {
+        text-align: center;
+        margin-bottom: 10px;
+        h3 {
+          font-size: 30px;
+        }
+        i {
+          font-size: 60px;
+          background: -webkit-linear-gradient(to left, $theme-primary, $theme-secondary);
+          background: linear-gradient(to left, $theme-primary, $theme-secondary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
     }
   }
   &.feature {
@@ -307,7 +346,7 @@ section {
         margin-bottom: 0;
       }
     }
-    // section-post-heading fatto da Antonio
+    // section-post-heading
     .section-post-heading {
       margin-bottom: 100px;
       h2 {
@@ -324,20 +363,7 @@ section {
     .device-container {
       margin-bottom: 100px;
     }
-    .feature-item {
-      text-align: center;
-      margin-bottom: 100px;
-      h3 {
-        font-size: 30px;
-      }
-      i {
-        font-size: 80px;
-        background: -webkit-linear-gradient(to left, $head-primary, $head-secondary);
-        background: linear-gradient(to left, $head-primary, $head-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
+
   }
   &.cta {
     position: relative;
