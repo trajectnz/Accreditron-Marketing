@@ -205,7 +205,13 @@ header {
         margin-bottom: 30px;
         font-size: 30px;
       }
+      p.italic {
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 10px;
+      }
       .join.btn {
+        font-size: 18px;
         margin: 16vh 0 0 0;
       }
       .list-badges {
@@ -338,6 +344,11 @@ section {
   }
   &.feature {
     background-color: white;
+    .action {
+      background-color: #343345;
+      color: white;
+      padding: 20px;
+    }
     .section-heading {
       h2 {
         margin-top: 0;
@@ -425,6 +436,8 @@ section {
   }
   &.contact {
     text-align: center;
+    background: #343345;
+    color: white;
     h2 {
       margin-top: 0;
       margin-bottom: 25px;

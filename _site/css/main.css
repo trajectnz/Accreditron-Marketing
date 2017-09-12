@@ -159,7 +159,12 @@ header {
         margin-top: 0;
         margin-bottom: 30px;
         font-size: 30px; }
+      header .header-content .header-content-inner p.italic {
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 10px; }
       header .header-content .header-content-inner .join.btn {
+        font-size: 18px;
         margin: 16vh 0 0 0; }
       header .header-content .header-content-inner .list-badges {
         margin-bottom: 25px; }
@@ -251,6 +256,10 @@ section {
           -webkit-text-fill-color: transparent; }
   section.feature {
     background-color: white; }
+    section.feature .action {
+      background-color: #343345;
+      color: white;
+      padding: 20px; }
     section.feature .section-heading h2 {
       margin-top: 0; }
     section.feature .section-heading p {
@@ -317,7 +326,9 @@ section {
       top: 0;
       left: 0; }
   section.contact {
-    text-align: center; }
+    text-align: center;
+    background: #343345;
+    color: white; }
     section.contact h2 {
       margin-top: 0;
       margin-bottom: 25px; }
