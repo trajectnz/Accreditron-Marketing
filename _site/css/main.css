@@ -55,7 +55,7 @@ p {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 10px auto; }
+  padding: 15px 45px; }
   .navbar-default .navbar-header .navbar-brand {
     font-family: 'Quicksand', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
@@ -150,7 +150,8 @@ header {
     text-align: center;
     align-items: center;
     height: 80vh;
-    display: flex; }
+    display: flex;
+    margin: 60px 0 0 0; }
     header .header-content .header-content-inner {
       color: #fff;
       max-width: 500px;
