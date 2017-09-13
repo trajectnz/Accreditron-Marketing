@@ -121,6 +121,9 @@ p {
   }
 }
 
+#navdark {
+
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -376,6 +379,27 @@ section {
       margin-bottom: 100px;
     }
 
+  }
+  &.about-team {
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/team/Accreditron-Team-HighRes-0578.jpg');
+    padding: 250px 0;
+    .about-content {
+      position: relative;
+      z-index: 1;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: white;
+        max-width: 450px;
+        font-size: 50px;
+      }
+    }
   }
   &.cta {
     position: relative;
