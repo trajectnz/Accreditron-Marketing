@@ -94,6 +94,9 @@ p {
     .navbar-default .nav > li.active > a:hover, .navbar-default .nav > li.active > a:focus:hover {
       background-color: transparent; }
 
+#navdark {
+  background-color: #343345; }
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -251,8 +254,8 @@ section {
           font-size: 30px; }
         section.learn .feature-list .feature-item i {
           font-size: 60px;
-          background: -webkit-linear-gradient(to left, #00A5FF, #09CEBF);
-          background: linear-gradient(to left, #00A5FF, #09CEBF);
+          background: -webkit-linear-gradient(to left, #00A5FF, #343345);
+          background: linear-gradient(to left, #00A5FF, #343345);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
   section.feature {
@@ -283,7 +286,8 @@ section {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url("../img/team/Accreditron-Team-HighRes-0578.jpg");
+    top: 30px;
+    background-image: url("../img/team/meet-team.jpg");
     padding: 250px 0; }
     section.about-team .about-content {
       position: relative;
@@ -419,8 +423,8 @@ footer {
 
 .bg-primary {
   background: #00A5FF;
-  background: -webkit-linear-gradient(#00A5FF, #09CEBF);
-  background: linear-gradient(#00A5FF, #09CEBF); }
+  background: -webkit-linear-gradient(#00A5FF, #343345);
+  background: linear-gradient(#00A5FF, #343345); }
 
 .text-primary {
   color: #00A5FF; }

@@ -122,8 +122,9 @@ p {
 }
 
 #navdark {
-
+  background-color: $theme-secondary;
 }
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -387,7 +388,8 @@ section {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('../img/team/Accreditron-Team-HighRes-0578.jpg');
+    top: 30px;
+    background-image: url('../img/team/meet-team.jpg');
     padding: 250px 0;
     .about-content {
       position: relative;
