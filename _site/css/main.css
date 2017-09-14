@@ -95,7 +95,7 @@ p {
       background-color: transparent; }
 
 #navdark {
-  background-color: #343345; }
+  background-color: rgba(52, 51, 69, 0.95); }
 
 @media (min-width: 768px) {
   .navbar-default {
@@ -112,7 +112,7 @@ p {
       .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover {
         color: white; }
     .navbar-default.affix {
-      background-color: #343345;
+      background-color: rgba(52, 51, 69, 0.95);
       border-color: rgba(34, 34, 34, 0.1); }
       .navbar-default.affix .navbar-header .navbar-brand {
         color: white; }
@@ -285,10 +285,9 @@ section {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-position: center;
-    top: 30px;
+    background-position-y: -210px;
     background-image: url("../img/team/meet-team.jpg");
-    padding: 250px 0; }
+    padding: 260px 0; }
     section.about-team .about-content {
       position: relative;
       z-index: 1; }
@@ -351,7 +350,8 @@ section {
   section.contact {
     text-align: center;
     background: #343345;
-    color: white; }
+    color: white;
+    padding-top: 80px; }
     section.contact h2 {
       margin-top: 0;
       margin-bottom: 25px; }
