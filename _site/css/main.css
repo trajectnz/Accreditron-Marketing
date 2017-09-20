@@ -222,13 +222,13 @@ section {
       margin-top: 0; }
     section .section-post-heading p {
       margin-bottom: 0; }
+  section .blue-bar {
+    border-bottom: 2px solid #00A5FF;
+    width: 30%;
+    margin: 100px auto 0 auto; }
   section.animation {
     background-color: white;
     padding-top: 100px; }
-    section.animation .blue-bar {
-      border-bottom: 2px solid #00A5FF;
-      width: 30%;
-      margin: 100px auto 0 auto; }
     section.animation h2 {
       margin-top: 0;
       font-size: 50px; }
@@ -248,7 +248,6 @@ section {
       flex-direction: column;
       align-self: center; }
       section.learn .feature-list .feature-item {
-        text-align: center;
         margin-bottom: 10px; }
         section.learn .feature-list .feature-item h3 {
           font-size: 30px; }
@@ -258,6 +257,8 @@ section {
           background: linear-gradient(to left, #00A5FF, #343345);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
+  section.why {
+    background-color: white; }
   section.feature {
     background-color: white; }
     section.feature .action {
@@ -288,15 +289,8 @@ section {
     background-position-y: -210px;
     background-image: url("../img/team/meet-team.jpg");
     padding: 260px 0; }
-    section.about-team .about-content {
-      position: relative;
-      z-index: 1; }
-      section.about-team .about-content h2 {
-        margin-top: 0;
-        margin-bottom: 25px;
-        color: white;
-        max-width: 450px;
-        font-size: 50px; }
+  section .about-content {
+    padding: 50px 0; }
   section.cta {
     position: relative;
     -webkit-background-size: cover;
@@ -348,15 +342,21 @@ section {
       top: 0;
       left: 0; }
   section.contact {
-    text-align: center;
     background: #343345;
     color: white;
     padding-top: 80px; }
     section.contact h2 {
       margin-top: 0;
       margin-bottom: 25px; }
-      section.contact h2 i {
-        color: #dd4b39; }
+    section.contact i {
+      margin-right: 15px;
+      margin-left: 15px; }
+    section.contact .content {
+      margin-top: 65px; }
+      section.contact .content h2 {
+        margin-bottom: 40px; }
+      section.contact .content p {
+        margin-top: 25px; }
     section.contact ul.list-social {
       margin-bottom: 0; }
       section.contact ul.list-social li a {
