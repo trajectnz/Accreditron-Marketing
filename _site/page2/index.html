@@ -11,9 +11,6 @@
 
     <title>Kotahi - Less Paperwork, better services</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
-
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -21,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="/css/animate.min.css" type="text/css"> -->
     <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="/vendor/device-mockups/device-mockups.min.css">
@@ -37,102 +34,91 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google ADS mobile block -->
-    
 
-    
 
 </head>
 
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target="#navbar">
   <div class="inner-body">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="../#page-top"><img class="logo" src="../img/logos/Kotahi_35_white.png" alt="Takahui">Takahui</a>
-        </div>
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand page-scroll" href="../#page-top">
+    <img class="logo" src="../img/logos/Kotahi_35_white.png" alt="Takahui">
+    Takahui
+  </a>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                  <a class="page-scroll" href="#learn">Tour</a>
-              </li>
-<!--                 <li>
-                    <a class="page-scroll" href="#download">Membership</a>
-                </li> -->
-<!--                 <li>
-                    <a class="page-scroll" href="#benefits">Benefits</a>
-                </li> -->
-                <li>
-                    <a class="page-scroll" href="#portfolio">Membership</a>
-                </li>
-<!--                 <li>
-                    <a class="page-scroll" href="#why">About</a>
-                </li> -->
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="/blog/">Blog</a>
-                </li>
-                <li>
-                    <a  class="btn-outline register" href="/blog/">Login and Register</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="#learn"> Tour <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary" href="#" role="button">Login and Register</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
+
   <header>
+<!--   <div class="container-fluid adjustedHeight">
+    <div class="video-container">
+      <div class="row">
+        <div class="col-md-12">
+          this is some text
+        </div>
+      </div>
+      <div class="row Page1">
+        some more text
+      </div>
+      <video autoplay loop poster="/img/video/video-placeholder.png" id="fillWidth">
+        <source src="/img/video/codesign-kotahi720.mp4" type="video/mp4">
+        <source src="/path/to/video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div> -->
+
+  <div class="video-container adjustedHeight">
     <video autoplay loop poster="/img/video/video-placeholder.png" id="bgvid">
       <source src="/img/video/codesign-kotahi720.mp4" type="video/mp4">
       <!-- <source src="/path/to/video.mp4" type="video/mp4"> -->
     </video>
+  </div>
+    <div class="container title-container">
+      <h1 class="display-3">Less Paperwork, Better Services</h1>
+      <h2 class="lead">Complience Support for Social Service Providers</h2>
+      <div class="row action">
+          <a href="#" class="join btn btn-outline btn-xl page-scroll">Login and Register</a>
+          <p class="italic">Accreditation is free forever!</p>
+      </div>
+  </div>
+  <section id="logo-bar" class="logo-bar text-center">
     <div class="container">
         <div class="row">
-            <div class="header-content">
-                <div class="header-content-inner">
-                  <div class="row">
-                    <div class="large-centered text-center">
-                      <h1>Less Paperwork, Better Services</h1>
-                      <h2>Complience Support for Social Service Providers</h2>
-                    </div>
-                  </div>
-
-                  <div class="row action">
-                      <a href="#" class="join btn btn-outline btn-xl page-scroll">Login and Register</a>
-                      <p class="italic">Accreditation is free forever!</p>
-                  </div>
-              </div>
+            <div class="">
+                <img src="img/logos/MSD.png" alt="">
+            </div>
+            <div>
+              <img src="img/logos/mined.png" alt="">
+            </div>
+            <div class="">
+                <img src="img/logos/MBIE_logo.png" alt="">
+            </div>
+            <div class="">
+                <img src="img/logos/BfB_logo.png" alt="">
             </div>
         </div>
     </div>
-    <section id="logo-bar" class="logo-bar text-center">
-      <div class="container">
-          <div class="row">
-              <div class="">
-                  <img src="img/logos/MSD.png" alt="">
-              </div>
-              <div>
-                <img src="img/logos/mined.png" alt="">
-              </div>
-              <div class="">
-                  <img src="img/logos/MBIE_logo.png" alt="">
-              </div>
-              <div class="">
-                  <img src="img/logos/BfB_logo.png" alt="">
-              </div>
-          </div>
-      </div>
-    </section>
+  </section>
 </header>
 
   <!-- 
@@ -293,7 +279,7 @@
     </div>
   </div>
 
-  <div class="blue-bar"></div>
+  <!-- <div class="blue-bar"></div>
     <div class="col-lg-12 text-center">
       <div class="section-heading">
         <h2>Your central hub for government communication</h2>
@@ -309,10 +295,8 @@
              <div class="device-mockup macbook white">
                <div class="device">
                  <div class="screen">
-                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                    <img src="/img/screen-grabs/kotahi_services.png" class="img-responsive" alt=""> </div>
                    <div class="button">
-                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                  </div>
                </div>
              </div>
@@ -320,19 +304,20 @@
          </div>
          <div class="col-md-3 feature-list">
            <div class="feature-item">
-             <!-- <i class="icon-envelope-letter text-primary"></i> -->
              <h3>Easy communication</h3>
              <p class="text-muted">Track your requests inline storing your information where you need it.</p>
            </div>
            <div class="feature-item">
-             <!-- <i class="icon-speech text-primary"></i> -->
              <h3>Only answer the same question once</h3>
              <p class="text-muted">All of your organisation information in one place. No more repeating yourself to many parties.</p>
+           </div>
+           <div>
+             <a href="#">LEARN MORE</a>
            </div>
          </div>
        </div>
      </div>
-
+ -->
 
      <div class="blue-bar"></div>
      <div class="row">
@@ -371,60 +356,15 @@
              <h3>Supports volunteers</h3>
              <p class="text-muted">All of your organisation information in one place. No more repeating yourself to many parties.</p>
            </div>
+           <div>
+             <a href="#">LEARN MORE</a>
+           </div>
          </div>
        </div>
      </div>
    </div>
   </div>
 
-            <!-- <div class="row">
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Own your data</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Securely share</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Less paperwork</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Transparant processes</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                  <h3>Hosts it in the best cloud hosting on the market</h3>
-                  <a target="_blank" href="https://m.do.co/c/a29d90274371" style="color:black" class="btn btn-outline btn-xl">Digital Ocean</a>
-                </div> -->
 </section>
 
   <!-- <section id="portfolio" class="download bg-primary text-center">
@@ -597,7 +537,7 @@
 
 
     <div class="row">
-      <div class="col-lg-6 content">
+      <div class="col-lg-5 content">
         <h2>We love hearing from you!</h2>
         <h3><i class="fa fa-laptop" aria-hidden="true"></i>Request a demo.</h3>
         <h3><i class="fa fa-book" aria-hidden="true"></i>Share your story.</h3>
@@ -607,7 +547,7 @@
         <p>We have designed Takahui for Social Service Providers. Which means hearing from you about different ways that takahui helps your organisation is the best way to help the product best serve the sector.</p>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-offset-1 col-lg-6">
           <div class="_form_3"></div><script src="https://accreditron.activehosted.com/f/embed.php?id=3" type="text/javascript" charset="utf-8"></script>
         </div>
       </div>
@@ -668,29 +608,24 @@
         </div>
     </div>
 </footer>
+
+
+
   <!-- jQuery -->
-<script src="/js/jquery.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
-<!-- Bootstrap Core JavaScript
-<script src="js/bootstrap.min.js"></script> -->
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-<!-- Plugin JavaScript -->
-<script src="/js/jquery.easing.min.js"></script>
-<script src="/js/jquery.fittext.js"></script>
-<script src="/js/wow.min.js"></script>
-
-<!-- jQuery
-<script src="/vendor/jquery/jquery.min.js"></script> -->
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="/js/new-age.min.js"></script>
+<script src="/js/takahui.js"></script>
 
+<!-- Google analytics -->
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -707,6 +642,10 @@
 </script>
 
 
+<!-- Google ADS mobile block -->
+<!--   
+
+   -->
   </div>
 </body>
 

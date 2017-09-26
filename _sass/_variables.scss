@@ -1,0 +1,15 @@
+
+
+
+// variables
+$head-primary: #7b4397 ;
+$head-secondary: #dc2430 ;
+$theme-primary: #00A5FF; //#09CEBF ;
+$nav-dark: rgba(52, 51, 69, 0.95);
+$theme-secondary: #343345 ;
+$theme-dark: #222;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "_mixins.scss";
+@import "_base.scss";
+
