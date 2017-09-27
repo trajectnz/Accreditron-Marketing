@@ -189,19 +189,7 @@ header {
     z-index: 10;
     color: #FFF;
     position: absolute;
-    align-self: flex-end;
-    top: 40vh;
-  }
-  .adjustedHeight {
-    height: calc(100% - 77px);
-    width: 100%;
-    padding: 0;
-  }
-
-  .adjustedHeight {
-    height: calc(100% - 77px);
-    width: 100%;
-    padding: 0;
+    top: 30vh;
   }
 
   .logo-bar {

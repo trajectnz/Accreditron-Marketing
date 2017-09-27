@@ -39,5 +39,12 @@
         $('.navbar-toggle:visible').click();
     });
 
+    // change nav color
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar");
+        $nav.toggleClass('navbar-dark bg-faded', $(this).scrollTop() > $nav.height());
+      });
+    });
 
 })(jQuery); // End of use strict
