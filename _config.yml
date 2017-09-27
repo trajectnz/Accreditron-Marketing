@@ -56,7 +56,7 @@ exclude:
 collections:
   modules:
     output: true
-  courses:
+  features:
     output: true
 
 include:

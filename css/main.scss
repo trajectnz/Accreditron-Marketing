@@ -173,18 +173,6 @@ header {
       object-fit: cover;
       opacity: .25;
   }
-  // .video-container {
-  //   overflow: hidden;
-  //   background: #000;
-  //   display: block !important;
-  //   position: relative;
-  // }
-
-  // .video-container video {
-  //   position: absolute;
-  //   z-index: 0;
-  //   bottom: 0;
-  // }
   .title-container {
     z-index: 10;
     color: #FFF;
@@ -345,16 +333,6 @@ section {
       margin-bottom: 100px;
     }
 
-  }
-  &.about-team {
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position-y: -210px;
-    background-image: url('../img/team/meet-team.jpg');
-    padding: 260px 0;
   }
   .about-content {
     padding: 50px 0;
