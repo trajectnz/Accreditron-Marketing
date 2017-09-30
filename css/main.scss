@@ -2,7 +2,6 @@
 ---
 
 @import "variables";
-@import "bootstrap/scss/bootstrap";
 
 
 .heading-font {
@@ -78,6 +77,9 @@ p {
     line-height: 35px;
     &:hover, &:focus {
       color: $theme-primary;
+    }
+    .logo {
+      max-height: 32px;
     }
   }
   .nav-link {
