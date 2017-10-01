@@ -159,11 +159,7 @@ p {
 
 header {
   flex-direction: column;
-  // width: 100%;
-  // font-size: 16px;
-  // text-align: center;
   overflow: hidden;
-  // position: relative;
   max-height: 100vh;
   display: flex;
   justify-content: flex-end;
@@ -398,8 +394,6 @@ section {
     }
   }
   &.contact {
-    background: #343345;
-    color: white;
     padding: 80px 0 100px 0;
     h2 {
       margin-top: 0;
