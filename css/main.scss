@@ -3,6 +3,14 @@
 
 @import "variables";
 
+.bg-theme-primary {
+  background-color: $bg-primary;
+}
+
+.bg-theme-dark {
+  background-color: $theme-secondary;
+}
+
 
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
@@ -113,6 +121,45 @@ p {
 
 #navdark {
   background-color: $nav-dark;
+}
+
+
+// registration
+.line {
+  margin-top: -12px;
+}
+
+// plus sign for accordian
+.bb-accordion:before,{
+    content: '+';
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    height: 21px;
+    line-height: 28px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10.5px;
+    transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform-origin: 6px 10px 0;
+    -ms-transform-origin: 6px 10px 0;
+    transition: transform 360ms ease;
+    transition-timing-function: cubic-bezier(0.5, 0.25, 0.75, 1.5);
+    width: 11px;
+}
+
+a.bb-accordion:hover, a.bb-accordion:active, a.bb-accordion:focus{
+  color: $bg-primary;
+  text-decoration: inherit;
+}
+
+.bb-accordion.bb-accordion[aria-expanded="true"]:before {
+    transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transition-duration: 480ms;
 }
 
 @media (min-width: 768px) {
@@ -523,11 +570,6 @@ footer {
   }
 }
 
-.bg-primary {
-  background: $theme-primary;
-  background: -webkit-linear-gradient($theme-primary, $theme-secondary);
-  background: linear-gradient($theme-primary, $theme-secondary);
-}
 
 .text-primary {
   color: $theme-primary;
