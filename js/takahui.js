@@ -39,11 +39,22 @@
         $('.navbar-toggle:visible').click();
     });
 
+
+        if ($(window).width() < 768) {
+            var $nav = $(".navbar");
+            $nav.addClass("navbar-light bg-light");
+        };
+
     // change nav color
     $(function () {
       $(document).scroll(function () {
         var $nav = $(".navbar");
         $nav.toggleClass('navbar-light bg-light', $(this).scrollTop() > $nav.height());
+
+        if ($(window).width() > 768) {
+            $(".logo.large.dark").toggle( $(this).scrollTop() < $nav.height() );
+            $(".logo.large.light").toggle( $(this).scrollTop() > $nav.height() );
+        }
       });
     });
 
