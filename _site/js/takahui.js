@@ -49,7 +49,7 @@
     $(function () {
       $(document).scroll(function () {
         var $nav = $(".navbar");
-        $nav.toggleClass('navbar-light bg-light', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-light', $(this).scrollTop() > $nav.height());
 
         if ($(window).width() > 768) {
             $(".logo.large.dark").toggle( $(this).scrollTop() < $nav.height() );
