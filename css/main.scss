@@ -353,7 +353,6 @@ header {
     z-index: 1;
     color: #FFF;
     position: absolute;
-    top: 50%;
     margin-top: -77px;
   }
   .device-container {
@@ -397,6 +396,9 @@ header {
         }
       }
     }
+    .title-container {
+      top: 50%;
+    }
     .device-container {
       max-width: none;
       max-height: calc(0vh);
@@ -438,7 +440,7 @@ section {
   .blue-bar {
     border-bottom: 2px solid $theme-primary;
     width: 30%;
-    margin: 100px auto 0 auto;
+    margin: 40px auto 0 auto;
   }
   &.animation {
     background-color: white;
@@ -462,16 +464,15 @@ section {
     .blue-bar {
       border-bottom: 2px solid $theme-primary;
       width: 30%;
-      margin: 100px auto;
+      margin: 10px auto 40px auto;
     }
     .feature-list {
       display: flex;
       flex-direction: column;
       align-self: center;
+      padding-top: 20px;
       .feature-item {
         margin-bottom: 10px;
-
-
       }
     }
   }
@@ -562,38 +563,7 @@ label{
   // padding-left: 0px !important;
 }
 
-// @media (min-width: 768px) {
-//   section.download .badges .badge-link {
-//     display: inline-block;
-//     margin-bottom: 0;
-//   }
-// }
 
-// @media (min-width: 768px) {
-//   section.download h2 {
-//     font-size: 70px;
-//   }
-// }
-
-// @media (min-width: 992px) {
-//   section.features .device-container {
-//     margin-bottom: 0;
-//   }
-// }
-
-// @media (min-width: 992px) {
-//   section.features {
-//     .device-container, .feature-item {
-//       max-width: none;
-//     }
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   section.cta .cta-content h2 {
-//     font-size: 80px;
-//   }
-// }
 
 footer {
   background-color: #222222;
@@ -758,22 +728,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .intro-header {
-    .site-heading, .post-heading, .page-heading {
-      padding: 150px 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .intro-header {
-    .site-heading h1, .page-heading h1 {
-      font-size: 80px;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
   .intro-header .post-heading {
     h1 {
       font-size: 55px;
@@ -781,5 +735,16 @@ body {
     .subheading {
       font-size: 30px;
     }
+  }
+  section {
+    .blue-bar {
+      margin: 100px auto 0 auto;
+    }
+    &.learn {
+      .blue-bar {
+        margin: 100px auto;
+      }
+    }
+
   }
 }
