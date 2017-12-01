@@ -1,0 +1,23 @@
+[debug] [2017-12-01T02:36:59.024Z] ----------------------------------------------------------------------
+[debug] [2017-12-01T02:36:59.028Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-12-01T02:36:59.028Z] CLI Version:   3.15.4
+[debug] [2017-12-01T02:36:59.028Z] Platform:      darwin
+[debug] [2017-12-01T02:36:59.028Z] Node Version:  v8.9.1
+[debug] [2017-12-01T02:36:59.029Z] Time:          Fri Dec 01 2017 15:36:59 GMT+1300 (NZDT)
+[debug] [2017-12-01T02:36:59.029Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-01T02:36:59.054Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-01T02:36:59.054Z] > authorizing via signed-in user
+[debug] [2017-12-01T02:36:59.057Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/accreditron  
+ Fri Dec 01 2017 15:36:59 GMT+1300 (NZDT)
+[debug] [2017-12-01T02:37:04.188Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-01T02:37:04.203Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/accreditron/tokens  
+ Fri Dec 01 2017 15:37:04 GMT+1300 (NZDT)
+[debug] [2017-12-01T02:37:05.211Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'accreditron'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing _site directory for upload...
+[debug] [2017-12-01T02:37:08.178Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/accreditron/uploads/-L-EvoHMQOa6CHjNDSKo?fileCount=131&message=  
+ Fri Dec 01 2017 15:37:08 GMT+1300 (NZDT)

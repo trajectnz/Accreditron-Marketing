@@ -23,5 +23,34 @@ $theme-teal: #09CEBF;
 
 
 @import "_mixins.scss";
-//@import "_base.scss";
 
+
+.bg-theme-primary {
+  background-color: $bg-primary;
+}
+
+.bg-theme-dark {
+  background-color: $theme-secondary;
+}
+
+.navbar-light{
+  background-color: #ebebeb !important;
+}
+
+.text-theme-dark {
+  color: $theme-secondary;
+}
+
+.heading-font {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+}
+
+.body-font {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.alt-font {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+}
