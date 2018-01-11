@@ -119,21 +119,20 @@ section#privacy-policy {
   margin-top: 100px;
 }
 
-.navbar{
+.navbar-nav{
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  padding: 15px 15px 15px 25px;
-  .navbar-brand{
-    font-size: 2.5rem;
-    line-height: 35px;
-    &:hover, &:focus {
-      color: $theme-primary;
-    }
-    .logo {
-      max-height: 32px;
-    }
-  }
+  // .navbar-brand{
+  //   font-size: 2.5rem;
+  //   line-height: 35px;
+  //   &:hover, &:focus {
+  //     color: $theme-primary;
+  //   }
+  //   .logo {
+  //     max-height: 32px;
+  //   }
+  // }
   .nav-link {
       //font-family: 'Quicksand', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
       //text-transform: uppercase;
@@ -141,9 +140,12 @@ section#privacy-policy {
       // &:focus {
       //   color: #222222;
       // }
-      // &:hover, &:focus:hover {
-      //   color: $theme-primary;
-      // }
+      &:hover, &:focus:hover {
+        color: $theme-primary;
+      }
+
+      color: white;
+
       &.btn {
         margin: 0 0 0 10px;
         background-color: $theme-primary;
@@ -159,6 +161,9 @@ section#privacy-policy {
     &:hover, &:focus:hover {
       background-color: transparent;
     }
+  }
+  .page-scroll.active {
+    color: $theme-primary;
   }
 }
 
