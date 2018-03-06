@@ -151,6 +151,11 @@ section#privacy-policy {
         background-color: $theme-primary;
       }
     }
+  .nav-light {
+    .nav-link {
+      color: black;
+    }
+  }
   .navlink.active {
     color: $theme-primary !important;
     background-color: transparent;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top" data-spy="scroll" data-target="#navbar">
+  <div class="inner-body">
+  {% include nav-light.html %}
+
+  <br><br><br><br><br>
+  <span style="    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    max-width: 600px;
+    margin: 25px auto;">
+  <h2>Kia Ora! Here's a slide presentation:</h2>
+  <p style="max-width: 600px;">Please take a look at the slide show below. You can expand it to full screen or view as is. This presentation is about government data sharing and how Accreditron is a solution for social sector data sharing.</p>
+  </span>
+  <br>
+  <span style="justify-content: center;
+    display: flex;">
+
+    {{ content }}
+  </span>
+
+  <br><br>
+
+  {% include logo-bar.html %}
+
+  </div>
+</body>
+
+</html>
