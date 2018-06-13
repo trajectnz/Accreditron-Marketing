@@ -1,0 +1,36 @@
+.block-cta{
+	background-color: $blue;
+	color: white;
+	
+	h2{ 
+		text-align: center;
+		font-weight: bold;
+	} 
+
+	p{
+		text-align: center;
+		font-size: 19px; 
+	} 
+
+	div{
+		display: flex;
+		
+		a{ 
+			margin: 15px;
+			margin-top: 37px;
+			background-color: rgba(0,0,0,0.2);
+		}
+		
+		label{
+			margin: 15px;
+			display: block;
+			width: 100%;
+		}
+
+		input{
+			background-color: rgba(0,0,0,0.2);
+			border: none;
+			border-radius: 3px;
+		}
+	}
+}

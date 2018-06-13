@@ -1,0 +1,60 @@
+/* This sass file sets some base site-wide deafult styles */
+
+$blue: #0067F2;
+
+
+
+@import url('https://rsms.me/inter/inter-ui.css');
+
+*{ box-sizing: border-box }
+
+body{
+	font-family: 'Inter UI', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0px;
+}
+
+section{
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+hr{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgba(0,0,0,0.1)
+}
+
+h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.button{
+	background-color: $blue;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+
+
+input{
+	height: 40px;
+	font-size: 16px;
+	width: 100%;
+}

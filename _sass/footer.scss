@@ -1,0 +1,21 @@
+footer{
+	display: flex;
+	background-color: #333;
+	color: rgba(255,255,255,0.5);
+	
+	div{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	hr{
+		border: 1px solid rgba(255,255,255,0.2);
+	}	
+
+	a,p{
+		color: rgba(255,255,255,0.8);
+		text-decoration: none;
+		width: 100%;
+		display: block;
+	}
+}
