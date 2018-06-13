@@ -1,6 +1,7 @@
 /* This sass file sets some base site-wide deafult styles */
 
 $blue: #0067F2;
+$offblack: #383838;
 
 
 
@@ -13,6 +14,7 @@ body{
 	font-size: 16px;
 	line-height: 1.4;
 	margin: 0px;
+	overflow-x: hidden;
 }
 
 section{
@@ -34,23 +36,38 @@ hr{
 h1{
 	font-size: 30px;
 	font-weight: bold;
+	color: $offblack;
 }
 
 h2{
 	font-size: 25px;
 	font-weight: normal;
+	color: $offblack;
 }
+
+img{
+	flex-shrink: 0; // fixes ie flexbox stretchy images thing
+}
+
 
 .button{
 	background-color: $blue;
-	height: 40px;
-	line-height: 40px;
 	display: inline-block;
 	text-decoration: none;
 	color: white;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 3px;
+	border: 2px solid $blue;
 } 
+
+.button.outline{
+	background-color: white;
+	border: 2px solid $blue;
+	color: $blue;
+}
 
 
 input{
