@@ -15,6 +15,7 @@ body{
 	line-height: 1.4;
 	margin: 0px;
 	overflow-x: hidden;
+	color: $offblack;
 }
 
 section{
@@ -52,15 +53,20 @@ img{
 
 .button{
 	background-color: $blue;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	height: 40px;
+	line-height: 38px;
 	text-decoration: none;
 	color: white;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 7px;
-	padding-bottom: 7px;
 	border-radius: 3px;
 	border: 2px solid $blue;
+	
+	i{
+		padding-right: 10px;
+	}
 } 
 
 .button.outline{
