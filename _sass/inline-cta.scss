@@ -6,12 +6,37 @@
 	p{
 		width: 100%;
 		text-align: center;
+		font-weight: 500;
+		color: $blue;
 	}
 
-	div{
+	form{
 		display: flex;
 		
-		a{ margin: 15px }
-		input{ margin: 15px }
+		div{
+			width: 100%;
+		}
+	}
+
+	label{
+		width: 100%;
+		margin: 15px;
+		font-size: 14px;
+		font-weight: 500;
+		
+		input{
+			margin-top: 5px;
+		}
+	}
+
+	label:last-child{
+		width: 120px;
+		flex-shrink: 0;
+		
+		input{
+			text-align: center;
+			display: block;
+			margin-top: 24px;
+		}
 	}
 }

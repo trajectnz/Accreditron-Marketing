@@ -38,12 +38,19 @@ footer{
 	
 	hr{
 		border: 1px solid rgba(255,255,255,0.2);
+		margin-bottom: 15px;
 	}	
 
 	a,p{
 		color: rgba(255,255,255,0.8);
 		text-decoration: none;
 		width: 100%;
-		display: block;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	a:hover{
+		text-decoration: underline;
 	}
 }
