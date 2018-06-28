@@ -53,4 +53,18 @@ footer{
 	a:hover{
 		text-decoration: underline;
 	}
+
+	@media (max-width: 750px) {
+		section{
+			flex-wrap: wrap;
+		}
+
+		div{
+			width: 100% !important;
+			
+			a{
+				width: 100% !important;
+			}
+		}
+	}
 }

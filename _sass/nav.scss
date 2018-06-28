@@ -9,6 +9,10 @@
 		margin: 20px;
 		text-decoration: none;
 		color: #8F8F8F;
+		
+		&:hover{
+			color: $blue;
+		}
 	}
 	
 	.logo{

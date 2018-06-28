@@ -3,9 +3,7 @@
 $blue: #0067F2;
 $offblack: #383838;
 
-
-
-@import url('https://rsms.me/inter/inter-ui.css');
+@import 'inter-ui';
 
 *{ box-sizing: border-box }
 
@@ -55,7 +53,7 @@ img{
 	background-color: $blue;
 	display: inline-flex;
 	align-items: center;
-	height: 40px;
+	height: 46px;
 	text-decoration: none;
 	color: white;
 	padding-left: 10px;
@@ -67,22 +65,41 @@ img{
 	i{
 		padding-right: 10px;
 	}
+
+	&:hover{
+		background-color: darken($blue, 10%);
+		border: 2px solid darken($blue, 10%);
+	}
+
+	&:active{
+		background-color: darken($blue, 30%);
+		border: 2px solid darken($blue, 30%);
+	}
 } 
 
 .button.outline{
 	background-color: white;
 	border: 2px solid $blue;
 	color: $blue;
+	
+	&:hover{
+		border: 2px solid darken($blue, 10%);
+	}
+
+	&:active{
+		border: 2px solid darken($blue, 30%);
+	}
 }
 
 
 input{
-	height: 40px;
+	height: 46px;
 	font-size: 16px;
 	width: 100%;
 	border: 2px solid rgba(0,0,0,0.2);
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 3px;
+	outline: none;
 }
 
