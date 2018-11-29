@@ -133,6 +133,10 @@ h1{
   font-weight: normal;
 }
 
+h1.mobile-header{
+  display: none;
+}
+
 h2{
   font-size: 24px;
   font-weight: bold;
@@ -196,7 +200,6 @@ hr{
 
 .g{
   display: flex;
-  width: 100%;
 }
 
 .g-50{
@@ -230,6 +233,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
     
     p{
       max-width: 650px;
@@ -239,6 +244,13 @@ footer{
   
   section{
     margin-top: 64px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    hr{
+      margin-bottom: 64px;
+      margin-top: 0px;
+    }
   }
 }
 
@@ -253,14 +265,33 @@ ul{
 }
 
 
-@media screen and (max-width: 930px) { 
-
+@media screen and (max-width: 940px) { 
   .hero{
     max-width: 100%;
+    margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    p{
+      max-width: 100%;
+      text-align: center;
+    }
+
+    h1:first-of-type{
+      display: none;
+    }
+
+    .mobile-header{
+      display: block;
+      text-align: center;
+    }
   }
 
-  .hero p{
-    max-width: 100%;
+  .card{
+    margin: 0px;
+    padding: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .g{
@@ -269,6 +300,18 @@ ul{
 
   .g-50{
     width: 100%;
+  }
+
+  header{
+    height: 64px;
+  }
+
+  header img{
+    margin-left: 12px;
+  }
+
+  header nav{
+    margin-right: 0px;
   }
 }
 
