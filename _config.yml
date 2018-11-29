@@ -4,7 +4,7 @@ email: hello@Accreditron.com
 description: Bringing social service providers and government agencies together to save time and reduce duplication.
 
 # Site Settings
-locale                   : "en-US"
+locale: "en-US"
 
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
@@ -31,12 +31,6 @@ social:
   #  url: http://github.com/jekyll
 
 
-
-# Handling Reading
-safe:                 false
-plugins: [jekyll-paginate, jekyll-feed]
-
-
 exclude:
 - bin
 - config.rb
@@ -52,7 +46,6 @@ exclude:
 - package.json
 - yarn.lock
 
-
 collections:
   modules:
     output: true
@@ -62,12 +55,6 @@ collections:
 include:
 - _stylesheets
 - _javascript
-
-sass:
-  load_paths:
-    - assets/_scss
-    - node_modules
-  style: :compressed
 
 
 # Build settings
