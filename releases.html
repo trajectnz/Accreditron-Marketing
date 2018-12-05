@@ -1,0 +1,42 @@
+---
+layout: basic
+---
+<section>
+  <h1 class="ta-c"><strong>Releases</strong></h1>
+  <div class="releases">
+    <div class="loading">Loading Releases</div>
+  </div>
+</section>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+$.get( "https://api.github.com/repos/trajectnz/Accreditron-Releases/releases", success);
+
+function success(data){
+    
+  $('.loading').addClass('hide');
+  // loop through releases  
+  for (var i = 0; i < data.length; i++) {
+      console.log(data[i]);
+      var title = data[i].name;
+      var body = marked(data[i].body);
+      var version = data[i].tag_name;
+      var date = new Date(data[i].published_at).toLocaleDateString('en-GB');
+
+      console.log(title);
+      console.log(body);
+
+      $('.releases').append('<div><h2>'+title+'<span>'+version +'</span><span>'+date+'</span></h2><div>'+body+'</div></div>');
+  }
+
+}
+
+
+
+</script>
