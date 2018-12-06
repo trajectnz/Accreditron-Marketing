@@ -139,7 +139,7 @@ a {
   border-bottom: solid 2px rgba(0, 0, 0, 0);
   padding-bottom: 2px;
   color: white;
-  border-bottom: solid 2px #00A5FF; }
+  border-bottom: solid 2px rgba(0, 165, 255, 0.5); }
 
 a:visited {
   color: inherit; }
@@ -168,6 +168,9 @@ hr {
 
 .g-50 {
   width: 50%; }
+
+.g-33 {
+  width: 33.33%; }
 
 .center {
   align-items: center;
@@ -231,6 +234,8 @@ footer ul {
       border-radius: 3px;
       display: inline-block;
       vertical-align: middle; }
+  .releases img {
+    max-width: 100%; }
 
 .hide {
   display: none; }
@@ -260,6 +265,9 @@ footer ul {
     flex-wrap: wrap; }
 
   .g-50 {
+    width: 100%; }
+
+  .g-33 {
     width: 100%; }
 
   header {

@@ -45,6 +45,7 @@ exclude:
 - gruntfile.js
 - package.json
 - yarn.lock
+- bustCloudflareCache.sh
 
 collections:
   modules:
