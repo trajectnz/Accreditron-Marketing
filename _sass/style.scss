@@ -173,7 +173,7 @@ a{
   border-bottom: solid 2px rgba(0,0,0,0);
   padding-bottom: 2px;
   color: white;
-  border-bottom: solid 2px #00A5FF;
+  border-bottom: solid 2px rgba(0, 165, 255, 0.5);
 }
 
 a:visited{
@@ -212,6 +212,10 @@ hr{
 
 .g-50{
   width: 50%;
+}
+
+.g-33{
+  width: 33.33%;
 }
 
 .center{
@@ -296,6 +300,10 @@ footer ul{
       }
     }
   }
+
+  img{
+    max-width: 100%;
+  }
 }
 
 .hide{
@@ -337,6 +345,10 @@ footer ul{
   }
 
   .g-50{
+    width: 100%;
+  }
+
+  .g-33{
     width: 100%;
   }
 
