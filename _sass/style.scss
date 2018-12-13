@@ -133,6 +133,10 @@ section{
   flex-direction: column;
   padding-left: 8px;
   padding-right: 8px;
+  
+  &.skinny{
+    max-width: 600px;
+  }
 }
 
 h1{

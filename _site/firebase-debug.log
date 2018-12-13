@@ -1,0 +1,62 @@
+[debug] [2018-12-11T03:06:34.412Z] ----------------------------------------------------------------------
+[debug] [2018-12-11T03:06:34.414Z] Command:       /usr/local/Cellar/node/9.7.1_1/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-12-11T03:06:34.414Z] CLI Version:   4.2.1
+[debug] [2018-12-11T03:06:34.414Z] Platform:      darwin
+[debug] [2018-12-11T03:06:34.414Z] Node Version:  v9.7.1
+[debug] [2018-12-11T03:06:34.414Z] Time:          Tue Dec 11 2018 16:06:34 GMT+1300 (NZDT)
+[debug] [2018-12-11T03:06:34.414Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-11T03:06:34.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-11T03:06:34.428Z] > authorizing via signed-in user
+[debug] [2018-12-11T03:06:34.430Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-11T03:06:34.430Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-12-11T03:06:35.584Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-11T03:06:35.606Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/accreditron  
+ 
+[debug] [2018-12-11T03:06:37.062Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'accreditron'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-12-11T03:06:37.068Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/accreditron/versions  
+
+[debug] [2018-12-11T03:06:39.443Z] <<< HTTP RESPONSE 200
+[info] i  hosting[accreditron]: beginning deploy...
+[info] i  hosting[accreditron]: found 38 files in _site
+[debug] [2018-12-11T03:06:39.476Z] [hosting] hash cache [X3NpdGU] stored for 38 files
+[debug] [2018-12-11T03:06:39.476Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-11T03:06:39.476Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/accreditron/versions/38dbebe6056c195e:populateFiles  
+ <request body omitted>
+[debug] [2018-12-11T03:06:41.302Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-11T03:06:41.302Z] [hosting][populate queue][FINAL]
+[debug] [2018-12-11T03:06:41.303Z] [hosting] uploads queued: 0
+[debug] [2018-12-11T03:06:41.303Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[accreditron]: file upload complete
+[debug] [2018-12-11T03:06:41.304Z] [hosting] deploy completed after 1860ms
+[debug] [2018-12-11T03:06:41.667Z] [
+  {
+    "config": {
+      "public": "_site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "trailingSlash": false,
+      "postdeploy": "./bustCloudflareCache.sh",
+      "site": "accreditron"
+    },
+    "site": "accreditron",
+    "version": "sites/accreditron/versions/38dbebe6056c195e"
+  }
+]
+[info] i  hosting[accreditron]: finalizing version...
+[debug] [2018-12-11T03:06:41.668Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/accreditron/versions/38dbebe6056c195e?updateMask=status  
+
+[debug] [2018-12-11T03:06:43.115Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-11T03:06:43.116Z] [hosting] finalized version for accreditron:
+[info] ✔  hosting[accreditron]: version finalized
+[info] i  hosting[accreditron]: releasing new version...
+[debug] [2018-12-11T03:06:43.116Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/accreditron/releases?version_name=sites/accreditron/versions/38dbebe6056c195e  
+
